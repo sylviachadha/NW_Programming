@@ -13,7 +13,7 @@ public class Client {
 	// Make a connection to the server
 	private void connectToServer() {
 		try {
-			socket = new Socket("192.168.1.39", Client.SERVER_PORT);
+			socket = new Socket("10.99.88.224", Client.SERVER_PORT);
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new PrintWriter(socket.getOutputStream());
 		} catch (IOException e) {
